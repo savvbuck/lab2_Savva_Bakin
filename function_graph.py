@@ -8,9 +8,9 @@ def function_graph():
     for i in range(width):
         for j in range(length):
             if j == 0:
-                plain[i][j] = '  ' + str(i) + '  ' #sets vertical number line
+                plain[i][j] = f'  {str(i)}  ' #sets vertical number line
             if i == 0:
-                plain[i][j] = '  ' + str(j) + '  ' #sets horizontal number line
+                plain[i][j] = f'  {str(j)}  ' #sets horizontal number line
             if i == 3 * j:
                 plain[i][j] = '   //'
 

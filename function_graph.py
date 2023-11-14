@@ -1,12 +1,12 @@
+WIDTH = 10
+LENGTH = 10 
+
 def function_graph():
 
-    width = 10
-    length = 10
+    plain = [['  .  ' for i in range(WIDTH)] for i in range(LENGTH)] #sets plain of '.'
 
-    plain = [['  .  ' for i in range(width)] for i in range(length)] #sets plain of '.'
-
-    for i in range(width):
-        for j in range(length):
+    for i in range(WIDTH):
+        for j in range(LENGTH):
             if j == 0:
                 plain[i][j] = f'  {str(i)}  ' #sets vertical number line
             if i == 0:
@@ -15,8 +15,8 @@ def function_graph():
                 plain[i][j] = '   //'
 
     
-    for i in range(width):
-        print(''.join(plain[width - 1 - i])) #prints list's containments, but in reverse order
+    for i in range(WIDTH):
+        print(''.join(plain[WIDTH - 1 - i])) #prints list's containments, but in reverse order
         print('')
 
 
